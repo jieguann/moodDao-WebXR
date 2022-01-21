@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+     
+      
+      <a-assets>
+        <a-asset-item id="moon" src="/assets/moon/scene.gltf"></a-asset-item>
+        <a-asset-item id="moonWalk" src="/assets/moon_walk/scene.gltf"></a-asset-item>
+        <a-asset-item id="rocket" src="/assets/nicos_rocket/scene.gltf"></a-asset-item>
+        <!-- <img id="moonDaoLogo" scr="/assets/logo.png"> -->
+      </a-assets>
+
+      <a-entity camera look-controls position="0 1.6 500"></a-entity>
+      <a-entity gltf-model="#moon"></a-entity>
+      <a-entity gltf-model="#moonWalk" position="0 90 100" rotation="0 0 0" scale="0.1 0.1 0.1"></a-entity>
+        <a-entity gltf-model="#rocket" position="-500 -200 0" rotation="0 0 0" scale="40 40 40"></a-entity>
+      <!-- <a-entity geometry="primitive: box" scale = "1000000000 1000000000 10000000000"></a-entity> -->
+      <a-scene background="color: black"></a-scene>
+      <a-sky color="black"></a-sky>
+    </a-scene>
+  </body>
+</html>
