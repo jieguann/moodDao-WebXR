@@ -40,16 +40,19 @@
     <a-scene>
 
       <a-assets>
-        <a-asset-item id="moon" src="https://github.com/jieguann/moodDao-WebXR/blob/main/assets/moon.glb"></a-asset-item>
-        <a-asset-item id="rocket" src="https://github.com/jieguann/moodDao-WebXR/blob/main/assets/rocket.glb"></a-asset-item>
-       
+        <a-asset-item id="moon" src="https://dl.dropboxusercontent.com/s/aosfavybg8vooaf/moon.glb"></a-asset-item>
+        <a-asset-item id="rocket" src="https://dl.dropboxusercontent.com/s/660i2lzqanxf5h0/rocket.glb"></a-asset-item>
+        <a-asset-item id="moonWalk" src="https://dl.dropboxusercontent.com/s/fk0b5yrzcdwax4g/Walking%20astronaut.glb"></a-asset-item>
+        
+        
       </a-assets>
 
 
       <a-entity camera look-controls position="0 1.6 500"></a-entity>
       <a-entity gltf-model="#moon"></a-entity>
-      <a-entity gltf-model="#rocket" crossorigin="" position="0 90 100" rotation="0 0 0" scale="0.1 0.1 0.1"></a-entity>
-      <!-- <a-entity gltf-model="#rocket" position="-500 -200 0" rotation="0 0 0" scale="40 40 40"></a-entity> -->
+      <!-- <a-entity gltf-model="#rocket" position="0 90 100" rotation="0 0 0" scale="0.1 0.1 0.1"></a-entity> -->
+      <a-entity gltf-model="#rocket" position="-500 -200 0" rotation="0 0 0" scale="40 40 40"></a-entity>
+      <a-entity gltf-model="#moonWalk" animation-mixer position="0 90 100" rotation="0 0 0" scale="40 40 40"></a-entity>
       
       
       <a-sky color="black"></a-sky>
