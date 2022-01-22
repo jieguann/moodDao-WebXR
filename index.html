@@ -36,14 +36,19 @@
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
   </head>
   <body>
+    window.THREE.ImageLoader.prototype.corssOrigin = ''
     <a-scene>
 
-     
+      <a-assets>
+        <a-asset-item id="moon" src="/assets/moon.glb"></a-asset-item>
+        
+       
+      </a-assets>
 
 
       <a-entity camera look-controls position="0 1.6 500"></a-entity>
-      <!-- <a-entity gltf-model="#moon"></a-entity> -->
-      <a-entity gltf-model="url(https://github.com/jieguann/moodDao-WebXR/blob/main/assets/moon.glb)" position="0 90 100" rotation="0 0 0" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity gltf-model="#moon" crossorigin=""></a-entity>
+      <!-- <a-entity gltf-model="url(https://github.com/jieguann/moodDao-WebXR/blob/main/assets/moon.glb)" crossorigin="" position="0 90 100" rotation="0 0 0" scale="0.1 0.1 0.1"></a-entity> -->
       <!-- <a-entity gltf-model="#rocket" position="-500 -200 0" rotation="0 0 0" scale="40 40 40"></a-entity> -->
       
       
