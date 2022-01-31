@@ -1,83 +1,14 @@
-<!-- <html>
+<html>
   <head>
-    <meta charset="utf-8">
-    <title>MoodDao XR</title>
-    <meta name="description" content="360&deg; Image Gallery - A-Frame">
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-event-set-component@5/dist/aframe-event-set-component.min.js"></script>
-    <script src="https://unpkg.com/aframe-layout-component@5.3.0/dist/aframe-layout-component.min.js"></script>
-    <script src="https://unpkg.com/aframe-template-component@3.2.1/dist/aframe-template-component.min.js"></script>
-    <script src="https://unpkg.com/aframe-proxy-event-component@2.1.0/dist/aframe-proxy-event-component.min.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
   </head>
   <body>
     <a-scene>
-     
-      
-      <a-assets>
-        <a-asset-item id="moon" src="/assets/moon/scene.gltf"></a-asset-item>
-        <a-asset-item id="moonWalk" src="/assets/moon_walk/scene.gltf"></a-asset-item>
-        <a-asset-item id="rocket" src="/assets/nicos_rocket/scene.gltf"></a-asset-item>
-       
-      </a-assets>
-
-      <a-entity camera look-controls position="0 1.6 500"></a-entity>
-      <a-entity gltf-model="#moon"></a-entity>
-      <a-entity gltf-model="#moonWalk" position="0 90 100" rotation="0 0 0" scale="0.1 0.1 0.1"></a-entity>
-        <a-entity gltf-model="#rocket" position="-500 -200 0" rotation="0 0 0" scale="40 40 40"></a-entity>
-     
-      <a-scene background="color: black"></a-scene>
-      <a-sky color="black"></a-sky>
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
     </a-scene>
   </body>
-</html> -->
-
-<!-- <html>
-  <head>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script> 
-  </head>
-  <body>
-    
-    <a-scene device-orientation-permission-ui="enabled: false" > -->
-      
-      <!-- <a-assets>
-        <a-asset-item id="moon" src="https://dl.dropboxusercontent.com/s/aosfavybg8vooaf/moon.glb"></a-asset-item>
-        <a-asset-item id="rocket" src="https://dl.dropboxusercontent.com/s/660i2lzqanxf5h0/rocket.glb"></a-asset-item>
-        <a-asset-item id="moonWalk" src="https://dl.dropboxusercontent.com/s/fk0b5yrzcdwax4g/Walking%20astronaut.glb"></a-asset-item>
-        <img id="galaxy" src="https://dl.dropboxusercontent.com/s/xfyt4bosflverx1/galaxy.jpg?dl=0">
-        
-        
-      </a-assets> -->
-
-
-      <!-- <a-entity camera look-controls position="0 100 500"></a-entity>
-      <a-gltf-model position='0 90 100' src='assets/rocket.glb'></a-gltf-model> -->
-      <!-- <a-entity gltf-model="#rocket" position="0 90 100" rotation="0 0 0" scale="0.1 0.1 0.1"></a-entity> -->
-      <!-- <a-entity gltf-model="#rocket" position="-500 -200 0" rotation="0 0 0" scale="40 40 40"></a-entity>
-      <a-entity gltf-model="#moonWalk" animation-mixer position="0 90 100" rotation="0 0 0" scale="50 50 50"></a-entity> -->
-      
-      
-      <!-- <a-sky id="image-360" radius="1000" src="#galaxy"></a-sky> -->
-      <!-- <a-scene background="color: black"></a-scene>
-
-    </a-scene>
-  </body>
-</html> -->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-  <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script> 
-  <title>Document</title>
-</head>
-<body>
-  <a-scene device-orientation-permission-ui="enabled: false" > -->
-      <a-entity camera look-controls position="0 100 500"></a-entity>
-      <a-gltf-model position='0 90 100' src='assets/rocket.glb'></a-gltf-model>
-    </a-scene>
-</body>
 </html>
